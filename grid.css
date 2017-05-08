@@ -1,0 +1,84 @@
+table {
+  border-collapse: collapse;
+  border-spacing: 0px;
+}
+td, th {
+  padding: 10px;
+  margin: 0px;
+  overflow: auto;
+  font-style: normal;
+  font-size: 15px;
+}
+table div.title {
+  resize: horizontal;
+  overflow: auto;
+  margin: 0px;
+  padding-left: 5px;
+  padding-right: 5px;
+  display:block;
+  color: #039;
+}
+table td div, table th div{
+  border: 0;
+  width: auto;
+  height: auto;
+  min-height: 30px;
+  min-width: 50px;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #669;
+  padding: 0 8px;
+}
+table td.fix div, table th.fix div{
+  min-width: 50px;
+}
+.fix:first-child {
+  position: absolute;
+  margin-left: -350px;
+  width: 150px;
+}
+.fix:nth-child(2){
+  position: absolute;
+  margin-left: -180px;
+  width: 150px;
+}
+.fix-one {
+  position: absolute;
+  margin-left: -180px;
+  width: 150px;
+}
+.outer {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+}
+.inner {
+  overflow-x: scroll;
+  overflow-y: visible;
+  width: 80%; 
+  margin-left: 20%;
+  margin-top: 5%;
+}
+tr {
+    background: #e8edff;
+}
+tr:nth-of-type(odd) {
+    background: #fff;
+}
+td.fix, td.fix-one{
+  background: #e8edff;
+}
+#data-grid{
+  font-family: 'Proxima Nova Bold',"Segoe UI",Roboto,"Droid Sans","Helvetica Neue",Arial,sans-serif;
+  text-align: center;
+}
+table#tblOptions {
+    border: 1px solid darkblue;
+    margin: 0 auto;
+}
+table#tblOptions td input {
+    min-height: 20px;
+    vertical-align: middle;
+}
